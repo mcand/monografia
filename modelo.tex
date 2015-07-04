@@ -1,0 +1,100 @@
+\documentclass[
+        12pt,
+        openany, %openright,			
+        oneside, %twoside,			%% twoside: para frente e verso ao imprimir
+        a4paper,			
+        english,			
+%	french,				%% Idioma adicional 
+%	spanish,			%% Idioma adicional 
+        brazil			        %% Idioma principal 
+        ]{abntbibufjf}
+
+\input{preamble}
+
+%% Iniciar o documento
+\begin{document}
+
+\include{capa}
+
+\textual
+\pagestyle{simple}   
+
+\include{capitulos/introducao}
+\include{capitulos/capitulo2}
+
+\postextual
+
+
+\bibliography{referencias}
+
+%% Referencias. LISTAR EXATAMENTE AS CITADAS NO TRABALHO.
+% \begin{thebibliography}{99}
+
+% %% ALGUNS EXEMPLOS ABAIXO
+
+% \bibitem{Ferrari2003} FERRARI, M. Amplia\c{c}\~ao e refor\c{c}o do vocabul\'ario em l\'ingua estrangeira atrav\'es da narra\c{c}\~ao e 
+% da leitura de hist\'orias infanto-juvenis. \textit{Letras Hoje}, Porto Alegre, v. 39, n. 3, p. 73-90, set. 2003.
+
+% \bibitem{CalcB} FLEMMING, D. M.; GON\c{C}ALVES, M. B. \textit{C\'alculo B.} S\~ao Paulo: Makron Books, 2007.
+
+% \bibitem{Figueiredo96} FIGUEIREDO, D. G. \textit{An\'alise I.} Rio de Janeiro: Livros T\'ecnicos e Cient\'ificos, 1996.
+
+% \end{thebibliography}
+
+
+
+
+%% Apendices
+
+% \begin{apendicesenv}
+
+% \chapter{T\'itulo do Primeiro Ap\^endice}
+
+% ``Texto ou documento elaborado pelo autor, a fim de complementar sua argumenta\c{c}\~ao, 
+% sem preju\'izo da unidade nuclear do trabalho''
+% (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS, 2011, p. 6).
+
+% ``Elemento opcional. Deve ser precedido da palavra \textbf{AP\^ENDICE}, identificado por letras mai\'usculas 
+% consecutivas, travess\~ao e pelo respectivo t\'itulo. Utilizam-se letras mai\'usculas dobradas, 
+% na identifica\c{c}\~ao dos ap\^endices, quando esgotadas as letras do alfabe\-to.''
+% (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS, 2011, p. 13)
+% \newline
+% EXEMPLO:
+% \begin{center}
+% \textbf{AP\^ENDICE A - Avalia\c{c}\~ao num\'erica de c\'elulas inflamat\'orias}
+% \end{center}
+
+
+% \chapter{Segundo Ap\^endice}
+% Texto do Segundo Ap\^endice 
+% \end{apendicesenv}
+
+%% Anexos
+
+% \begin{anexosenv}
+
+% \chapter{T\'itulo do Primeiro Anexo}
+% ``Texto ou documento n\~ao elaborado pelo autor, que serve de fundamenta\c{c}\~ao, 
+% comprova\c{c}\~ao e ilustra\c{c}\~ao''
+% (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS, 2011, p. 9).
+
+% ``Elementos opcional. Deve ser precedido da palavra \textbf{ANEXO}, identificado por letras mai\'usculas 
+% consecutivas, travess\~ao e pelo respectivo t\'itulo. Utilizam-se letras mai\'usculas dobradas, 
+% na identifica\c{c}\~ao dos anexos, quando esgotadas as letras do alfabeto.''
+% (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS, 2011, p. 6).
+% \newline
+% EXEMPLO: 
+% \begin{center}
+% \textbf{ANEXO A - Representa\c{c}\~ao gr\'afica da contagem de c\'elulas inflamat\'orias presentes
+% nas caudas em regenera\c{c}\~ao - Grupos de controle I (Temperatura)}
+% \end{center}
+
+
+% \chapter{T\'itulo do Segundo Anexo}
+% Texto do Segundo Anexo
+
+
+% \end{anexosenv}
+
+%%% ---
+\end{document}

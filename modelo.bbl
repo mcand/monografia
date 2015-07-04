@@ -1,0 +1,20 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Janes 2015]{7107412}
+\abntrefinfo{Janes}{JANES}{2015}
+{JANES, A. A guide to lean software development in action. In:
+  \textbf{Software Testing, Verification and Validation Workshops (ICSTW), 2015
+  IEEE Eighth International Conference on}. [S.l.: s.n.], 2015. p.~1--2.}
+
+\bibitem[Poppendieck 2007]{4222727}
+\abntrefinfo{Poppendieck}{POPPENDIECK}{2007}
+{POPPENDIECK, M. Lean software development. In:  \textbf{Software Engineering -
+  Companion, 2007. ICSE 2007 Companion. 29th International Conference on}.
+  [S.l.: s.n.], 2007. p. 165--166.}
+
+\end{thebibliography}
