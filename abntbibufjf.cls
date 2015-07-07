@@ -65,7 +65,7 @@
 \newcommand{\epigraphname}{Ep\'igrafe}
 \newcommand{\dedicatorianame}{Dedicat\'oria}
 \newcommand{\errataname}{\bfseries ERRATA}
-\newcommand{\agradecimentosname}{\bfseries AGRADECIMENTOS}
+\newcommand{\agradecimentosname}{\bfseries AGRADECIMENTOS\vspace*{0.18cm}}
 \newcommand{\anexoname}{\bfseries ANEXO}
 \newcommand{\anexosname}{Anexos}
 \newcommand{\apendicename}{\bfseries AP\^ENDICE}
@@ -74,7 +74,7 @@
 \newcommand{\coorientadorname}{Coorientador:}
 \newcommand{\folhadeaprovacaoname}{\bfseries FOLHA DE APROVA\c{C}\~AO}
 \newcommand{\resumoname}{RESUMO} 
-\newcommand{\listadesiglasname}{\bfseries LISTA DE ABREVIATURAS E SIGLAS}
+\newcommand{\listadesiglasname}{\bfseries LISTA DE ABREVIATURAS E SIGLAS \vspace*{0.18cm}}
 \newcommand{\listadesimbolosname}{\bfseries LISTA DE S\'IMBOLOS}
 \newcommand{\fontename}{Fonte}
 \newcommand{\notaname}{Nota}
@@ -83,7 +83,7 @@
   \renewcommand{\contentsname}{\bfseries SUM\'ARIO} %%
   \renewcommand{\bibname}{\bfseries REFER\^ENCIAS}
   \renewcommand{\indexname}{\bfseries \'INDICE}
-  \renewcommand{\listfigurename}{\bfseries LISTA DE ILUSTRA\c{C}\~{O}ES}
+  \renewcommand{\listfigurename}{\bfseries LISTA DE ILUSTRA\c{C}\~{O}ES \vspace*{0.38cm}}
   \renewcommand{\listtablename}{\bfseries LISTA DE TABELAS}
 }
 
