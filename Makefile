@@ -7,14 +7,12 @@ default: main clean
 main:
 	pdflatex $(FILE).tex
 	bibtex $(FILE).aux
-	makeindex $(FILE).nlo -s nomencl.ist -o $(FILE).nls
 	pdflatex $(FILE).tex
 	pdflatex $(FILE).tex
 
 .PHONY: clean
 clean:
-	rm -f *.aux **/*.aux *.bak *.bbl *.blg *.dvi *.ilg *.lof *.log *.lot *.nlo *.out *.toc
-	rm -f capitulios/*.aux
+	rm -f *.aux **/*.aux *.bak *.bbl *.blg *.dvi *.ilg *.lof *.log *.lot  *.out *.toc
 
 .PHONY: open
 open: main clean

@@ -84,7 +84,7 @@
   \renewcommand{\bibname}{\bfseries REFER\^ENCIAS}
   \renewcommand{\indexname}{\bfseries \'INDICE}
   \renewcommand{\listfigurename}{\bfseries LISTA DE ILUSTRA\c{C}\~{O}ES \vspace*{0.38cm}}
-  \renewcommand{\listtablename}{\bfseries LISTA DE TABELAS}
+  \renewcommand{\listtablename}{\bfseries LISTA DE TABELAS \vspace*{0.38cm}}
 }
 
 %% --
