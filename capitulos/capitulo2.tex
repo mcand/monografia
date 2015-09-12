@@ -1,7 +1,7 @@
 \chapter{METODOLOGIAS DE DESENVOLVIMENTO}
 \label{cap:02}
 
-A medida que o \textit{software} começou a ganhar mais importância na vida das pessoas, as empresas tiveram que investir em modelos que melhoram sua capacidade de produção em um mercado que se torna cada vez mais competitivo, como relata \citeonline{4222727}. Não é incomum projetos complexos de \textit{software} precisarem ser executados durante um período de tempo para terem sucesso e até fazerem sentido. Um sistema de análise de candidatos a uma eleição, por exemplo, não teria sentido se ficasse pronto depois que a eleição tivesse acabado. Os modelos de desenvolvimento auxiliaram essas empresas a entenderem melhor a dinâmica de desenvolvimento e ajudaram a desenvolver projetos no melhor custo, prazo e qualidade possível. Nesse capítulo são vistos alguns modelos de desenvolvimento, alguns ainda utilizados, e outros que estão em desuso, mas que representaram grande importância no entendimento de como os engenheiros de \textit{software} lidam com seus projetos de \textit{software}. 
+A medida que o \textit{software} começou a ganhar mais importância na vida das pessoas, as empresas tiveram que investir em modelos que melhoram sua capacidade de produção em um mercado que se torna cada vez mais competitivo, como relata \citeonline{4222727}. Não é incomum projetos complexos de \textit{software} precisarem ser executados durante um período de tempo para terem sucesso e até fazerem sentido. Um sistema de análise de candidatos a uma eleição, por exemplo, não teria sentido se ficasse pronto depois que a eleição tivesse acabada. Os modelos de desenvolvimento auxiliaram essas empresas a entenderem melhor a dinâmica de desenvolvimento e ajudaram a desenvolver projetos no melhor custo, prazo e qualidade possível. Nesse capítulo são vistos alguns modelos de desenvolvimento, alguns ainda utilizados, e outros que estão em desuso, mas que representaram grande importância histórica para evolução do que há disponível hoje. Esse capítulo tem como objetivo abordar alguns modelos de processo tradicionais: como o cascata, incremental e RUP. Logo depois, são vistos algumas metodologias ágeis que são utilizadas no mercado como SCRUM, XP, LSD etc. 
 %A medida que o \textit{software} foi ganhando maior impotância na vida das pessoas e das empresas, tornou-se necessária a criação de \textit{softwares} de maneira repetida, mais rápida e com qualidade. Pode-se dizer que esses modelos {, tanto no mercado como no meio acadêmico, surgiram modelos que foram criados para organizar e melhorar o fluxo de desenvolvimento de \textit{software}.
 
 \section{PROCESSO DE SOFTWARE}
@@ -55,11 +55,12 @@ Finalmente há o fluxo de processo paralelo, o qual se diferencia dos outros por
 
 Na próxima seção são vistos alguns modelos de desenvolvimento, que como visto, empregam algum fluxo de processo.
 
-\section{MODELOS DE DESENVOLVIMENTO}
+\section{MODELOS DE DESENVOLVIMENTOS TRADICIONAIS}
 
 Como visto na seção anterior, os modelos de desenvolvimento estão atralado a um ou mais fluxos de processo. Nesta seção são vistos alguns modelos de desenvolvimento que foram utilizados pela indústria de software e outros que ainda são amplamente utilizados. Como há muitos modelos, são descritos os principais segundo \citeonline {pressman:11}.
 
 \subsection{Cascata}
+\label{sec:cascata}
 
 O modelo de desenvolvimento cascata é o ciclo de desenvolvimento mais simples possível. Ele começa basicamente com o levantamento de requisitos por parte do cliente e depois com as etapas de planejamento, modelagem e construção de forma sequencial. Não é possível ir de uma etapa para outra ou pular alguma etapa no processo. Seu fluxo de processo segue o mesmo princípio da Figura \ref{fig:02} e por isso não é mostrado. Dentro da etapa de comunicação há atividades como início do projeto e levantamento de requisitos. Na etapa de planejamento, há atividades como estimativas de cronograma e acompanhamento. Na modelagem há a análise do projeto. A construção possui as atividades de codificação e testes e finalmente no emprego atividades como entrega, suporte e \textit{feedback}.
 
@@ -151,7 +152,7 @@ O processo unificado é composto segundo \citeonline{machado:13} por:
 Além dos papéis, o RUP possui práticas que visam resolver problemas que ameaçam projetos como: alta complexidade, falta de definição formal de um processo de gerenciamento de mudanças, inconsistências não detectadas em requisitos (design e implementação), testes insuficientes, controle subjetivo, falha ao atacar riscos do projeto, comunicação ambigua e imprecisa e automação insuficiente. A seguir são vistas as práticas de acordo com \citeonline{machado:13}.
 
 \begin{enumerate}
-\item \textbf{Desenvolvimento iterativo}: Utilização do modelo em espiral e a construção do \textit{software} se em iterações. Para mais informações sobre o modelo, consulte a sessão \ref{sec:espiral}.
+\item \textbf{Desenvolvimento iterativo}: Utilização do modelo em espiral e a construção do \textit{software} se em iterações. Para mais informações sobre o modelo, consulte a seção \ref{sec:espiral}.
 \item \textbf{Gerenciar os requisitos}: Consiste em elicitar, organizar e documentar a funcionalidade e restrições do \textit{software}.
 \item \textbf{Usar arquitetuas baseadas em componentes}: Sistema é organizado em módulos coesos e fracamente acoplados. Um modelo pode ser desenvolvido por um terceiro, aproveitado de outro projeto e desenvolvido desde o início.
 \item \textbf{Modelar software visualmente}: Utilização da modelos (e.g UML) para descrever o sistema de forma não ambigua.
@@ -354,7 +355,7 @@ A equipe da metodologia crystal vai depender complexidade (como visto na Tabela 
 
 \subsection{Processo Unificado Ágil (UAP)}
 
-O processo unificado ágil (ou em inglês \textit{Agile Unified Process}) é uma abordagem híbrida criada por Scott Ambler através da combinação do RUP (visto na sessão \ref{sec:rup}) com métodos ágeis. Através da combinação de metodologias, criou-se um \textit{framework} capaz de ser aplicado em pequenos e grandes projetos de \textit{software}. Assim, todos os princípios do movimento ágil (visto na sessão \ref{sec:agile}) foram agregados ao AUP.
+O processo unificado ágil (ou em inglês \textit{Agile Unified Process}) é uma abordagem híbrida criada por Scott Ambler através da combinação do RUP (visto na seção \ref{sec:rup}) com métodos ágeis. Através da combinação de metodologias, criou-se um \textit{framework} capaz de ser aplicado em pequenos e grandes projetos de \textit{software}. Assim, todos os princípios do movimento ágil (visto na seção \ref{sec:agile}) foram agregados ao AUP.
 Quando criado por Ambler, o UAP foi centrado nos seguintes princípios segundo \citeonline{edeki:13}:
 
 \begin{itemize}
@@ -377,4 +378,132 @@ Assim como o RUP, o UAP possui fases e disciplinas. Uma diferença do UAP com o 
 \end{center}
 \end{figure}
 
+\subsection{Método de Desenvolvimento de Sistemas Dinâmicos (DSDM)}
 
+O DSDM (\textit{Dynamic Systems Development Method}) ou Método de Desenvolvimento de Sistemas Dinâmicos é uma adordagem de desenvolvimento ágil utilizada para desenvolver e manter projetos de \textit{software} cujo prazo é curto. Essa metodologia surgiu em 1994 como uma demanda de líderes de empresas que estavam insatisfeitos com métodos de desenvolvimento que eram caros, rígidos e não confiáveis. Essa metodologia baseia-se na versão modificada do princípio de Pareto. Em outras palavras, a metodologia propõe que 80\% de uma aplicação pode ser entregue em 20\% do tempo que levaria para que a aplicação completa fosse feita. A metodologia utiliza o modelo iterativo de desenvolvimento (pequenas entregas) e, além disso, somente o suficiente é feito. Detalhes e requisitos obscuros são deixadas para próxima iteração. Existe um grupo chamado DSDM Consortium formado por algumas empresas que utilizam-se dessa metodologia e que ``mantêm'' o \textit{framework}. Mais informações podem ser encontradas em \textit{http://bit.ly/1JWOGIU}. \cite{pressman:11} \cite{dsdm:2015}
+
+O DSDM basea-se em nove princípios conforme \citeonline{macedo:12}:
+
+\begin{itemize}
+	\item Participação ativa dos usuários e \textit{stakeholders};
+	\item Abordagem cooperativa e compartilhada;
+	\item Equipes com poder de decisão;
+	\item Entregas contínuas que fazem diferença;
+	\item Desenvolvimento iterativo e incremental;
+	\item \textit{Feedback};
+	\item Todas as possíveis alterações durante desenvolvimento podem ser reversíveis;
+	\item Fixar os requisitos essenciais e
+	\item Teste em todo ciclo de vida.
+\end{itemize}
+
+Em relação aos testes, como o prazo dos projetos que utilizam-se de DSDM são rígidos, testes são feitos desde o começo (testes de regressão são bastante utilizados). \cite{macedo:12}
+
+O ciclo de desenvolvimento segundo \citeonline{pressman:11} é composto por três ciclos iterativos que são precedidos por duas atividades de ciclos adicionais. São elas:
+
+\begin{itemize}
+	\item \textbf{Estudo de viabilidade}: Tem como objetivo estabelecer os requisitos básicos de negócio, restrições e a viabilidade do uso do \textit{framework} DSDM.
+	\item \textbf{Estudo de negócio}: Tem como objetivo estabelecer requisitos funcionais e de informação. A arquitetura do sistema é definida também nessa etapa.
+	\item \textbf{Iteração de modelos funcionais}: Tem como objetivo produzir um conjunto de protótipos funcionais que serão melhorados através do \textit{feedback} dos usuários.
+	\item \textbf{Iteração de projeto e desenvolvimento}: Pode ocorrer ao mesmo tempo que a iteração de modelo funcional. Tem como objetivo revisar o que foi feito na iteração anterior e certificar-se da existência de um processo de engenharia na produção de algum valor ao negócio do cliente. 
+	\item \textbf{Implementação}: É responsável por alocar o último incremento do \textit{software} no ambiente operacional. Caso o \textit{software} não esteja funcionando conforme o esperado ou venha alguma solicitação de mudança, o processo volta para a etapa de iteração de modelos funcionais.
+\end{itemize}
+
+\subsection{Desenvolvimento de Software Adaptativo (ASD)}
+ 
+O desenvolvimento adaptativo de \textit{software} ou (\textit{adaptative software development}) é uma métodologia proposta por Sam Bayer e James Highsmith em 1997 para criação de projetos de \textit{software} de maneira mais rápida. Essa maneira mais rápida de desenvolvimento torna-se fundamental em um ambiente que exige a construção de programas complexos e em um prazo curto onde os programadores não tem muito poder de decisão. \cite{pressman:11} \cite{macedo:12}
+
+O ciclo da metodologia ASD possui três fases: especulação, colaboração e aprendizagem. A seguir são vistos cada um deles segundo \cite{pressman:11}.
+
+Na fase de especulação há o início do projeto com o planejamento de ciclos adaptáveis. Esse planejamento envolve o levantamento de informações como: missão do cliente, restrições do projeto (e.g. data de entrega ou descrições de usuário) e requisitos básicos. Tudo isso será levantado para definição dos ciclos (incrementos) que farão parte do projeto de \textit{software}. Na etapa de colaboração é feito o levantamento de necessidades, JAD e miniespecificações. A colaboração, como parte de uma metodologia ágil, é importante e nessa metodologia não é diferente, assim gerentes de projeto e \textit{stakeholders} atuam na priorização das funcionalidades do sistema para possibilitar a organização do projeto. As funcionalidades que são mais utilizadas e importantes vão ter uma prioridade maior. O aprendizado é uma fase importante pois possibilita que todo artefato produzido seja apresentado para equipe. Revisões junto com clientes e testes são versão beta são feitas nessa etapa. Nessa fase o desenvolvedor certamente aprende cada vez mais sobre o cliente, seus desejos e os próximos passos que o projeto deve passar. Os ciclos de revisão e teste são curtos e servem apenas para aprender com erros pequenos. \cite{macedo:12} \cite{pressman:11}
+
+A Figura \ref{fig:asd} mostra o ciclo de desenvolvimento da metodologia. Depois da fase de aprendizado, há uma liberação de incremento de \textit{software} que é passível que sofrer ajustes para ciclos subsequentes.
+
+\begin{figure}[htb!]
+\begin{center}
+\caption{Ciclo do ASD}
+\label{fig:asd}
+\includegraphics[width=13cm]{assets/asd} \\
+\fonte{Adaptado de \citeauthoronline{pressman:11}, \citeyear{pressman:11}.}
+\end{center}
+\end{figure}
+
+\subsection{Scrum}
+\label{sec:scrum}
+
+A metodologia SCRUM\footnote{O nome SCRUM é oriundo de uma atividade que acontece em uma partida de rugby.}, além de outras metodologias ágeis, foi fortemente influenciada por práticas do \textit{lean} (ou manufatura enxuta). Essa metodologia foi proposta por Jeff Sutherland e posteriormente expandida por Schwaber e Beeddle. Como uma metodologia ágil, o SCRUM é ideal para projetos cujos requisitos são incertos -- tendo assim uma grande capacidade de adaptar-se a mudanças de requisitos. Além disso, é ideal para projetos com prazo apertado. Sua principal função é orientar o desenvolvimento de \textit{software} dentro de uma processo que possui as seguintes atividades estruturais segundo \citeonline{pressman:11}:
+
+\begin{enumerate}
+	\item Requisitos;
+	\item Análise;
+	\item Projeto;
+	\item Evolução e;
+	\item Entrega.
+\end{enumerate}
+
+Em cada atividade metodológica, ocorrem tarefas que são realizadas dentro de um padrão de processo chamado de \textit{sprint}\footnote{\textit{Sprint} são corridas de velocidade em inglês.} que são iterações de trabalho com duração de duas até quatro semanas. \cite{pressman:11}
+
+O SCRUM é baseado segundo \citeonline{macedo:12} em seis características:
+
+\begin{enumerate}
+	\item Flexibilidade de prazos;
+	\item Times pequenos;
+	\item Revisões frequentes;
+	\item Colaboração e
+	\item Orientação a objetos;
+\end{enumerate}
+
+A Figure \ref{fig:scrumfund} mostra os fundamentos do SCRUM. Os papéis se dividem em três principais: \textit{Product Owner}, SCRUM \textit{Master} e \textit{Team} ou equipe. Além desses três papéis há a possibilidade do cliente ser incluso, pois ele exerce uma participação importante na construção do sistema. As cerimômias são reuniões que acontecem durante o ciclo de desenvolvimento do projeto e são: \textit{Daily Meeting}(ou \textit{Daily Scrum}), \textit{Sprint Review}, \textit{Sprint Planning Meeting} e \textit{Sprint Retrospective}. Os artefatos são documentos gerados através dessas reuniões ou cerimônias e são: \textit{Product Backlog}, \textit{Sprint Backlog} e \textit{Burndown Chart}. \cite{macedo:12}
+
+\begin{figure}[htb!]
+\begin{center}
+\caption{Fundamentos do SCRUM}
+\label{fig:scrumfund}
+\includegraphics[width=13cm]{assets/scrum_papeis} \\
+\fonte{Adaptado de \citeauthoronline{macedo:12}, \citeyear{macedo:12}.}
+\end{center}
+\end{figure}
+
+O ciclo de desenvolvimento do SCRUM é mostrado na Figura \ref{fig:scrum}. Tudo começa com uma reunião entre os clientes e desenvolvedores para definição do \textit{backlog} do produto. Esse backlog de produto nada mais é do que a lista de funcionalidades que o sistema deve ter. Após acordado com o cliente sobre as entregas, riscos e prazos, é eleito o SCRUM Master entre a equipe alocada para o projeto. Com o \textit{backlog} de produto feito, é definido o que será feito na \textit{sprint}: assim é feito o \textit{backlog} de \textit{sprint} através da cerimônia de \textit{sprint planning} em que todos participam e tem duração de no máximo oito horas. Nela, o \textit{product owner} irá selecionar items do \textit{backlog} de produto e priorizar de acordo com a necessidade. Após isso, os desenvolvedores irão então quebrar as funcionalidades em atividades. Técnicas como \textit{planning poker} são utilizadas para definir o tamanho de uma atividade e medir seu esforço. O \textit{planning poker} é basicamente um jogo de cartas que os desenvolvedores utilizam para dar ``nota'' de complexidade para uma funcionalidade. Enquanto as notas das cartas divergirem entre eles, uma nova rodada é feita. A numeração de Fibonacci é geralmente empregada nesse processo. Em cada dia de trabalho é feita uma reunião (como mostra a Figura \ref{fig:scrum}) chamada de \textit{daily scrum} entre o SCRUM Master e o Time de no máximo 15 minutos cujo objetivo principal é saber o que cada um está fazendo, o que será feito hoje, se há algum impedimento e quais. Ao final de 2 a 4 semanas tem-se um incremento de \textit{software}. Ao final da \textit{sprint} é realizada a cerimônia de \textit{sprint review} cujo objetivo é mostrar os resultados da \textit{sprint} para o \textit{Product Owner} e outras pessoas convidadas. A cerimônia de retrospectiva de \textit{sprint} ou \textit{retrospective sprint} é também realizada com a participação do time e SCRUM master. O \textit{product owner} pode estar presente, embora sua participação não seja obrigatória. Essa cerimônia tem como objetivo ver o que deu certo e o que deu errado para melhorar as próximas \textit{sprints}. \cite{macedo:12} \cite{cohn:11}
+
+\begin{figure}[htb!]
+\begin{center}
+\caption{Dinâmica do SCRUM}
+\label{fig:scrum}
+\includegraphics[width=15cm]{assets/scrum} \\
+\fonte{Adaptado de \citeauthoronline{macedo:12}, \citeyear{macedo:12}.}
+\end{center}
+\end{figure}
+
+Alguns artefatos produzidos, como mencionado anteriormente, com o SCRUM são \textit{backlog} de produto, \textit{backlog} de \textit{sprint}, \textit{task board} (utilizado mapear o estado das atividades na sprint) e o gráfico Burndown que é feito pelo SCRUM Master para verificar o esforço de cada interação e fazer o acompanhamente de forma gráfica. \cite{macedo:12}
+
+\subsection{Desenvolvimento de Software Enxuto (LSD)}
+
+O desenvolvimento de \textit{software} enxuto ou LSD (\textit{lean software development}) é uma metodologia de desenvolvimento que visa aplicar os princípios da fabricação enxuta para a engenharia de \textit{software}. Os princípios que norteiam o LSD e que vieram do pensamento \textit{lean} são:
+
+\begin{itemize}
+	\item Eliminiar desperdício;
+	\item Incorporar qualidade;
+	\item Criar conhecimento;
+	\item Adiar compromisso;
+	\item Engregar rápido;
+	\item Respeitar as pessoas e
+	\item Otimizar o todo.
+\end{itemize}
+
+O LSD adapta cada princípio do pensamento \textit{lean} ao processo de \textit{software}. Para eliminar desperdício pode-ser executar as seguintes acões segundo \citeonline{pressman:11}:
+
+\begin{enumerate}
+	\item Não adicionar recursos ou funções que possivelmente não serão percebidas ou utilizadas pelos usuários;
+	\item Avaliar o impacto do custo e do cronograma de qualquer requisito solicitado;
+	\item Eliminar qualquer etapa de processo que não seja realmente necessária;
+	\item Estabelecer mecanismos para elicitação de requisitos;
+	\item Escrever e executar testes de qualidade;
+	\item Reduzir tempo para solicitar e receber uma decisão que afete o \textit{software} e
+	\item Racionalizar o fluxo de informação entre as pessoas envolvidas no processo
+\end{enumerate}
+
+No próximo capítulo é abordada essa metodologia com mais detalhes. 
+
+\section{CONCLUSÃO DO CAPÍTULO}
+
+As pessoas envolvidas com o desenvolvimento de \textit{software} sempre procuraram melhorar a entrega em termos de prazo, custo e qualidade e assim novos modelos foram sendo criados e adaptados para melhorar o processo de desenvolvimento. Toda essa evolução e criação de novos processos foram importantes para o entendimento da natureza do \textit{software}, que ao contrário das outras engenharias é fruto de um trabalho social que envolve a participação massiva do cliente: principalmente nas metodologias ágeis. Pode-se dizer que não existe uma metologia de processo melhor ou pior e que tudo vai depender do tipo de projeto e complexidade. O modelo RUP, embora completo, não seria ideal para o desenvolvimento de um sistema simples, devido ao seu custo maior de implantação por exemplo. Dependendo da empresa, um ou outro processo se torna mais ideal para uma equipe de desenvolvimento. No caso do SCRUM, por exemplo, é essencial que todas as pessoas da equipe estejam sempre motivadas e sejam ágeis o suficiente para se adaptar a mudanças no projeto e isso não se adquire de uma hora para outra. Além disso, a comunicação entre todas as pessoas é essencial (principalemte com o cliente). O próximo capítulo aborda melhor o desenvolvimento enxuto de \textit{software} ou LSD (\textit{lean software development}).
